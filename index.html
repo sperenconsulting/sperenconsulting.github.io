@@ -307,7 +307,7 @@
     <p class="sub reveal d2">Your current and future customers have already switched to ChatGPT, Gemini, and Perplexity to find local businesses. I make sure those tools recommend you, not your competitor down the street.</p>
     <div class="reveal d3 hero-cta">
       <a href="#contact" class="btn js-contact">Show me if I'm invisible</a>
-      <p class="btn-note">I'll run a live AI search for your business and send you what shows up.<br>Ten minutes, no call, no cost.</p>
+      <p class="btn-note">I'll run a live AI search for your business and send you what shows up.<br>15 minutes, no cost.</p>
     </div>
     <div class="hero-stats" aria-label="Why AI search visibility matters">
       <div class="hstat">
@@ -448,7 +448,7 @@
 <section id="contact" class="cta-band">
   <div class="wrap">
     <h2>Curious what AI says about your business <span class="accent">right now?</span></h2>
-    <p>I'll run the same searches your customers are running and send you exactly what comes up. No call, no cost, no catch.</p>
+    <p>I'll run the same searches your customers are running and send you exactly what comes up. No cost, no catch.</p>
     <a href="mailto:sperenconsulting@gmail.com?subject=Free%20AI%20visibility%20check&amp;body=Hi%20Jhasper%2C%20I%27d%20like%20to%20see%20how%20my%20business%20shows%20up%20in%20AI%20search.%0A%0ABusiness%20name%3A%0AWhat%20we%20do%3A%0ACity%3A" class="btn btn--light js-contact">Show me if I'm invisible</a>
   </div>
 </section>
@@ -482,7 +482,7 @@
   <div class="modal-card">
     <button type="button" class="modal-close" aria-label="Close">&times;</button>
     <h3 id="contactTitle">Let's <span class="accent">find out.</span></h3>
-    <p id="contactDesc">Send me your business and I'll run the same searches your customers are running, then send back exactly what AI says. No call, no cost.</p>
+    <p id="contactDesc">Send me your business and I'll run the same searches your customers are running, then send back exactly what AI says. No cost.</p>
     <div class="modal-email">
       <span>sperenconsulting@gmail.com</span>
       <button type="button" class="modal-copy" id="copyEmail">Copy</button>
@@ -500,7 +500,7 @@
   var closeBtn=m.querySelector('.modal-close'),copyBtn=document.getElementById('copyEmail'),email='sperenconsulting@gmail.com',lastFocus=null;
   var titleEl=document.getElementById('contactTitle'),descEl=document.getElementById('contactDesc'),gmailEl=document.getElementById('gmailBtn'),mailEl=document.getElementById('mailBtn');
   var INTENTS={
-    check:{title:"Let's <span class='accent'>find out.</span>",desc:"Send me your business and I'll run the same searches your customers are running, then send back exactly what AI says. No call, no cost.",su:"Free%20AI%20visibility%20check",body:"Hi%20Jhasper%2C%20I%27d%20like%20to%20see%20how%20my%20business%20shows%20up%20in%20AI%20search.%0A%0ABusiness%20name%3A%0AWhat%20we%20do%3A%0ACity%3A"},
+    check:{title:"Let's <span class='accent'>find out.</span>",desc:"Send me your business and I'll run the same searches your customers are running, then send back exactly what AI says. No cost.",su:"Free%20AI%20visibility%20check",body:"Hi%20Jhasper%2C%20I%27d%20like%20to%20see%20how%20my%20business%20shows%20up%20in%20AI%20search.%0A%0ABusiness%20name%3A%0AWhat%20we%20do%3A%0ACity%3A"},
     pricing:{title:"Let's <span class='accent'>talk.</span>",desc:"Tell me about your business and which tier you're curious about, and I'll walk you through services and pricing.",su:"Speren%20Consulting%3A%20services%20and%20pricing",body:"Hi%20Jhasper%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services%20and%20pricing.%0A%0ABusiness%20name%3A%0AWhat%20we%20do%3A%0ACity%3A%0ATier%20I%27m%20interested%20in%20%28if%20any%29%3A"}
   };
   function applyIntent(k){var d=INTENTS[k]||INTENTS.check;if(titleEl)titleEl.innerHTML=d.title;if(descEl)descEl.textContent=d.desc;if(gmailEl)gmailEl.href="https://mail.google.com/mail/?view=cm&fs=1&to="+email+"&su="+d.su+"&body="+d.body;if(mailEl)mailEl.href="mailto:"+email+"?subject="+d.su+"&body="+d.body;}
