@@ -157,6 +157,12 @@
   .hero .sub{font-size:clamp(1.1rem,2vw,1.28rem);color:var(--body);max-width:56ch;margin:2.1rem 0 2.2rem;line-height:1.55}
   .hero-cta{text-align:center}
   .hero-cta .btn-note{margin-left:auto;margin-right:auto}
+  .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;max-width:820px;margin:clamp(2.5rem,5vw,3.5rem) auto 0;text-align:center}
+  .hstat-num{font-family:var(--sans);font-weight:800;font-size:clamp(1.9rem,3.4vw,2.6rem);line-height:1;letter-spacing:-.02em;color:var(--navy);margin:0}
+  .hstat-desc{font-family:var(--sans);font-weight:400;font-size:.98rem;line-height:1.4;color:var(--navy);margin:.5rem auto 0;max-width:28ch}
+  .hstat-src{font-size:.78rem;margin:.6rem 0 0}
+  .hstat-src a{color:rgba(34,52,76,.6);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;transition:color .15s}
+  .hstat-src a:hover{color:var(--blue)}
 
   /* Section scaffolding */
   section{position:relative}
@@ -167,11 +173,6 @@
   .sec-head h2{font-family:var(--sans);font-weight:700;font-size:clamp(1.8rem,4vw,3rem);line-height:1.08;letter-spacing:-.02em;margin-top:.5rem}
   .sec-head--center{text-align:center;max-width:660px;margin-left:auto;margin-right:auto}
   .sec-head--wide{max-width:none}
-  .stats{background:var(--navy);color:var(--ivory);padding:clamp(4rem,8vw,6rem) 0}
-  .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;text-align:center}
-  .stat-num{font-family:var(--sans);font-weight:800;font-size:clamp(2.6rem,5vw,3.8rem);line-height:1;letter-spacing:-.02em;margin:0}
-  .stat-desc{font-family:var(--sans);font-weight:400;font-size:1.1rem;line-height:1.4;color:var(--ivory);margin:.7rem auto 0;max-width:30ch}
-  .stat-src{font-size:.8rem;color:var(--taupe);margin:.9rem 0 0;letter-spacing:.02em}
 
   /* How it works */
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem}
@@ -279,7 +280,7 @@
     .brand span{line-height:1.1}
     .hero .inner{text-align:center}
     .btn{text-align:center}
-    .stats-row{grid-template-columns:1fr}
+    .hero-stats{grid-template-columns:1fr;gap:2rem}
   }
 </style>
 </head>
@@ -308,26 +309,21 @@
       <a href="#contact" class="btn js-contact">Show me if I'm invisible</a>
       <p class="btn-note">I'll run a live AI search for your business and send you what shows up.<br>Ten minutes, no call, no cost.</p>
     </div>
-  </div>
-</section>
-
-<section class="stats" aria-label="Why AI search visibility matters">
-  <div class="wrap">
-    <div class="stats-row">
-      <div class="stat">
-        <p class="stat-num">50%</p>
-        <p class="stat-desc">of consumers now use AI search to guide what they buy.</p>
-        <p class="stat-src">McKinsey, 2025</p>
+    <div class="hero-stats" aria-label="Why AI search visibility matters">
+      <div class="hstat">
+        <p class="hstat-num">50%</p>
+        <p class="hstat-desc">of consumers now use AI search to guide what they buy.</p>
+        <p class="hstat-src"><a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search" target="_blank" rel="noopener">McKinsey, 2025</a></p>
       </div>
-      <div class="stat">
-        <p class="stat-num">25%</p>
-        <p class="stat-desc">drop in traditional search traffic expected by 2026.</p>
-        <p class="stat-src">Gartner, 2024</p>
+      <div class="hstat">
+        <p class="hstat-num">25%</p>
+        <p class="hstat-desc">drop in traditional search volume expected by 2026.</p>
+        <p class="hstat-src"><a href="https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents" target="_blank" rel="noopener">Gartner, 2024</a></p>
       </div>
-      <div class="stat">
-        <p class="stat-num">5-10%</p>
-        <p class="stat-desc">of the sources AI pulls from is your own website; the rest is third-party.</p>
-        <p class="stat-src">McKinsey, 2025</p>
+      <div class="hstat">
+        <p class="hstat-num">5-10%</p>
+        <p class="hstat-desc">of the sources AI pulls from is your own website; the rest is third-party.</p>
+        <p class="hstat-src"><a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search" target="_blank" rel="noopener">McKinsey, 2025</a></p>
       </div>
     </div>
   </div>
